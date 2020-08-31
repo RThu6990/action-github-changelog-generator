@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 istrue () {
   case $1 in
     "true"|"yes"|"y") return 0;;
