@@ -44,7 +44,7 @@ if istrue "$INPUT_FILTERBYMILESTONE"; then ARG_FILTERBYMILESTONE="--filter-by-mi
 if istrue "$INPUT_AUTHOR"; then ARG_AUTHOR="--author"; else ARG_AUTHOR="--no-author"; fi
 if istrue "$INPUT_USERNAMESASGITHUBLOGINS"; then ARG_USERNAMESASGITHUBLOGINS="--usernames-as-github-logins"; fi
 if istrue "$INPUT_UNRELEASEDONLY"; then ARG_UNRELEASEDONLY="--unreleased-only"; fi
-if istrue "$INPUT_UNRELEASED"; then ARG_UNRELEASED="--unreleased"; else ARG_ISSUES="--no-unreleased"; fi
+if istrue "$INPUT_UNRELEASED"; then ARG_UNRELEASED="--unreleased"; else ARG_UNRELEASED="--no-unreleased"; fi
 if [ -n "$INPUT_UNRELEASEDLABEL" ]; then ARG_UNRELEASEDLABEL="--unreleased-label $INPUT_UNRELEASEDLABEL"; fi
 if istrue "$INPUT_COMPARELINK"; then ARG_COMPARELINK="--compare-link"; else ARG_COMPARELINK="--no-compare-link"; fi
 if [ -n "$INPUT_INCLUDELABELS" ]; then ARG_INCLUDELABELS="--include-labels $INPUT_INCLUDELABELS"; fi
